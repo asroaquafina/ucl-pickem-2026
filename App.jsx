@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { supabase } from './lib/supabaseClient'
-
+import { supabase } from './supabaseClient'
 const PLAYERS = ['Emi', 'Darius', 'Fane', 'Andrei', 'Narcis']
 const CLUBS = [
   'AEK Athens','LASK','Club Brugge','Aston Villa','Borussia Dortmund','Villarreal',
