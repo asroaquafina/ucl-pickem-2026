@@ -256,7 +256,7 @@ function Admin({settings, updateSettings, fixtures}) {
           {[1,2,3,4,5,6,7,8].map(n=><option key={n}>{n}</option>)}
         </select>
       </label>
-      <button onClick={()=>updateSettings({picks_open:!settings.picks_open)}>
+      <button onClick={() => updateSettings({picks_open: !settings.picks_open})}>
         {settings.picks_open ? 'Close picks' : 'Open picks'}
       </button>
     </div>
