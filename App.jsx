@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import { supabase } from './supabaseClient'
 
 const PLAYERS = ['Emi', 'Darius', 'Fane', 'Andrei', 'Narcis']
@@ -207,6 +208,7 @@ function App() {
           <Admin settings={settings} updateSettings={updateSettings} fixtures={fixtures} />
         )}
       </main>
+      <SpeedInsights />
     </div>
   )
 }
